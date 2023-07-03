@@ -71,13 +71,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Varo\CG\ComputacionGrafica\ComputacionGrafica\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Varo\CG\ComputacionGrafica\ComputacionGrafica\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Varo\CG\Computacion-Grafica\ComputacionGrafica\ComputacionGrafica\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Varo\CG\Computacion-Grafica\ComputacionGrafica\ComputacionGrafica\Libraries\lib;$(LibraryPath)</LibraryPath>
     <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Varo\CG\ComputacionGrafica\ComputacionGrafica\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Varo\CG\ComputacionGrafica\ComputacionGrafica\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Varo\CG\Computacion-Grafica\ComputacionGrafica\ComputacionGrafica\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Varo\CG\Computacion-Grafica\ComputacionGrafica\ComputacionGrafica\Libraries\lib;$(LibraryPath)</LibraryPath>
     <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -139,8 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="shaderClass.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="EBO.cpp" />
+    <ClCompile Include="VAO.cpp" />
+    <ClCompile Include="VBO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="default.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EBO.h" />
+    <ClInclude Include="VAO.h" />
+    <ClInclude Include="VBO.h" />
+    <ClInclude Include="shaderClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
